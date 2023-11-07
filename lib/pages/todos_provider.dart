@@ -7,6 +7,8 @@ class TodosNotifier extends StateNotifier<List<Todo>> {
 
   void addTodo(String desc) {
     state = [...state, Todo.add(desc: desc)];
+    // state.add(Todo.add(desc: desc));
+    // print('in addTodo: $state');
   }
 
   void toggleTodo(String id) {
